@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    background-attachment: fixed;
+}
+
+body {
+    background-image: url("/Image/book_stack.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+
+}
+
+
+
+.container {
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    width: 1200px;
+    margin: 200px;
+}
+
+.nav {
+
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+}
+
+#nav1 {
+    cursor: pointer;
+    animation: tada .9s infinite alternate;
+}
+
+
+
+.span {
+    padding: 5px;
+    margin-left: 20px;
+    border: 2px ridge whitesmoke;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    color: rgb(209, 144, 40);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    cursor: pointer;
+    transition: color .2s linear;
+    border-radius: 10px;
+    background: rgb(161, 7, 48);
+
+}
+
+.span:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.menu {
+    list-style-type: none;
+    margin: 10px;
+    font-family: italic;
+    font-size: large;
+    padding: 0;
+    float: right;
+}
+
+li {
+    display: inline;
+    padding: 14px 16px;
+
+}
+
+a {
+    padding: 5px;
+    margin-left: 20px;
+    border: 2px ridge rgb(232, 231, 231);
+    color: rgb(209, 144, 40);
+    margin: 20px 10px 0px 0px;
+    text-decoration: none;
+    transition: color .2s linear;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    border-radius: 10px;
+    background: rgb(161, 7, 48);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
