@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: auto;
-
 }
 
 body {
@@ -20,8 +18,8 @@ body {
 .container {
     border-radius: 16px;
     background: rgb(255, 255, 255);
-    height: 100%;
-    width: 75%;
+    height: 920px;
+    max-width: 100%;
     margin: 200px;
 }
 
@@ -30,6 +28,8 @@ body {
     justify-content: space-between;
     align-items: center;
     display: flex;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
 }
 
@@ -41,22 +41,47 @@ body {
 
 
 .span {
-    padding: 5px;
+    padding: 5px 25px;
+    margin-top: 8px;
     margin-left: 20px;
     border: 2px ridge whitesmoke;
-    text-shadow: 0 0 15px rgb(0, 0, 0);
-    color: rgb(209, 144, 40);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+    font-size: 18px;
     cursor: pointer;
     transition: color .2s linear;
     border-radius: 10px;
-    background: rgb(161, 7, 48);
+    background: chocolate;
+
 
 }
 
 .span:hover {
-    color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.1);
+
+}
+
+.books {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    font-size: 18px;
+    background-color: chocolate;
+    color: #ffffff;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 17px;
+    transition: color .2s linear;
+    cursor: pointer;
+}
+
+.books:hover {
+    color: rgb(53, 43, 43);
+
+    ;
+    /* background-color: #B8860B; */
 }
 
 
@@ -66,29 +91,118 @@ body {
     margin: 10px;
     font-family: italic;
     font-size: large;
-    padding: 0;
+    padding: 5px;
     float: right;
 }
+
+
 
 li {
     display: inline;
     padding: 14px 16px;
+    transition: .2s linear;
+    font-size: 15px;
 
+}
+
+li:hover {
+    transform: scale(1.1);
 }
 
 a {
-    padding: 5px;
+    padding: 3 8px;
     margin-left: 20px;
     border: 2px ridge rgb(232, 231, 231);
-    color: rgb(209, 144, 40);
+    color: rgb(255, 255, 255);
     margin: 20px 10px 0px 0px;
     text-decoration: none;
     transition: color .2s linear;
-    text-shadow: 0 0 15px rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(114, 112, 112);
     border-radius: 10px;
-    background: rgb(161, 7, 48);
+    background: chocolate
 }
 
 a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(53, 43, 43);
+
+}
+
+
+.column {
+    margin: 15px 30px;
+    float: left;
+    width: 20%;
+    padding: 15px 0 0px;
+}
+
+
+
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+}
+
+
+
+.container1 {
+    height: 11%;
+    background-color: rgb(20, 13, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social {
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.social_item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.whatsapp:hover {
+    border-color: #40b839;
+    box-shadow: 0px 0px 15px #40b839;
+    color: #40b839;
+}
+
+.facebook:hover {
+    border-color: rgb(6, 45, 216);
+    box-shadow: 0px 0px 15px rgb(6, 45, 216);
+    color: rgb(6, 45, 216);
+}
+
+.twitter:hover {
+    border-color: rgb(73, 138, 223);
+    box-shadow: 0px 0px 15px rgb(73, 138, 223);
+    color: rgb(73, 138, 223);
+}
+
+.instagram:hover {
+    border-color: rgb(221, 86, 210);
+    box-shadow: 0px 0px 15px rgb(221, 86, 210);
+    color: rgb(221, 86, 210);
 }
