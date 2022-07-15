@@ -10,7 +10,6 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
-
 }
 
 
@@ -19,8 +18,8 @@ body {
     border-radius: 16px;
     background: rgb(255, 255, 255);
     height: 920px;
-    max-width: 100%;
-    margin: 200px;
+    width: 80%;
+    margin: 200px 160px;
 }
 
 .nav {
